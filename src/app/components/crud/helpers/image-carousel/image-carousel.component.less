@@ -1,0 +1,89 @@
+@transition-speed: 1s;
+
+.img-carousel {
+    width: inherit;
+    height: inherit;
+}
+
+// img {
+//     width: 25vh;
+// }
+
+.frame .box {
+    position: relative;
+    width: 70vh; /// PC
+    background-image: url("/assets/tiles/cartographer.png");
+    background-repeat: repeat;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        right: -2px;
+        left: -2px;
+        transform: skew(2deg, 2deg);
+        z-index: -1;
+    
+        background: var(--imgCarouselColor);
+    }
+
+    /// MOBILE
+    @media screen and (max-width: 600px){
+        width: 50vh;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0.30; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+    from { opacity: 0.30; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    from { opacity: 0.30; }
+    to   { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0.30; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 0.7; }
+    to   { opacity: 0; }
+}
+@-moz-keyframes fadeOut {
+    from { opacity: 0.7; }
+    to   { opacity: 0; }
+}
+@-o-keyframes fadeOut {
+    from { opacity: 0.7; }
+    to   { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 0.7; }
+    to   { opacity: 0; }
+}
+
+.carousel {
+    .carousel-inner {  
+        // Previous Image
+        .active.carousel-item-left, .carousel-item-prev {
+          -webkit-animation: fadeOut @transition-speed infinite; /* Safari 4+ */
+          -moz-animation:    fadeOut @transition-speed infinite; /* Fx 5+ */
+          -o-animation:      fadeOut @transition-speed infinite; /* Opera 12+ */
+          animation:         fadeOut @transition-speed infinite; /* IE 10+, Fx 29+ */
+        }
+  
+        // Next image
+        .carousel-item-next, .carousel-item-prev {
+          -webkit-animation: fadeIn @transition-speed infinite; /* Safari 4+ */
+          -moz-animation:    fadeIn @transition-speed infinite; /* Fx 5+ */
+          -o-animation:      fadeIn @transition-speed infinite; /* Opera 12+ */
+          animation:         fadeIn @transition-speed infinite; /* IE 10+, Fx 29+ */
+        }
+	}
+}

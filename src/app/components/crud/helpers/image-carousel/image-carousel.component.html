@@ -1,0 +1,11 @@
+<div class="frame col d-flex align-items-center justify-content-center" style="padding: 0 0 0 0;">
+	<div class="box">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="8000" data-pause="false">
+			<div class="carousel-inner">
+				<div *ngFor="let image of images; let i = index" [ngClass]="i === 0 ? 'carousel-item active' : 'carousel-item'">
+					<img class="img-carousel" [src]="image" alt="{{i}}">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

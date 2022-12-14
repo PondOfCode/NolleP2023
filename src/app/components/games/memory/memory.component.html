@@ -1,0 +1,69 @@
+<crud>
+	<div text>
+		<div class="col-lg-8 title-arrow">
+			<h1>Phösar Memory</h1>
+		</div>
+		<br>
+		<br>
+		<div *ngIf="!show">
+			<h5>Under konstruktion återkom senare under Nollep <span style="color:#0586e8">#</span>🐼</h5>
+			<img class="imgTmp" src="assets/faviconTrans.ico">
+		</div>
+		<div *ngIf="show">
+			<div class="victoryScreen" *ngIf="ended">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="content">
+					<h1>{{ victoryText }}</h1>
+					<h2>{{ getTimer() }}</h2>
+					<h2>{{ correct }}/{{ cards.length }}</h2>
+					<div class="row justify-content-center">
+						<div class="col-10 col-sm-10 col-md-10 col-lg-10">
+							<button class="btn btn-lg btn-block btn-outline-danger" (click)="_reset()">Starta om</button>
+							<button class="btn btn-lg btn-block btn-outline-danger" *ngIf="correct === cards.length" data-toggle="modal" data-target="#modal">Överphösarnas Hemligheter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div *ngIf="loaded">
+				<h2 class="score">{{correct}}</h2>
+				<div class="row justify-content-center">
+					<h2 style="text-decoration: underline rgba(55, 173, 227, .85)">{{ choosen.phosare }}</h2> -->
+					<h2 style="position: absolute; left: 80%;">{{ correct }}/{{ cards.length }}</h2>
+				</div>
+				<div class="grid2x2 justify-content-center">
+					<div class="border">
+						<div class="box" id="boxA">
+							<div class="content" (click)="chooseCard($event, showCards[0].card)">
+								<img class="imgMemoryCards" id="imgA" [src]="showCards[0].card">
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<div class="box" id="boxB">
+							<div class="content" (click)="chooseCard($event, showCards[1].card)">
+								<img class="imgMemoryCards" id="imgB" [src]="showCards[1].card">
+							</div>
+						</div>	
+					</div>
+					<div class="border">
+						<div class="box" id="boxC">
+							<div class="content" (click)="chooseCard($event, showCards[2].card)">
+								<img class="imgMemoryCards" id="imgC" [src]="showCards[2].card">
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<div class="box" id="boxD">
+							<div class="content" (click)="chooseCard($event, showCards[3].card)">
+								<img class="imgMemoryCards" id="imgD" [src]="showCards[3].card">
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</crud>

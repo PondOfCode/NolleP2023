@@ -1,0 +1,115 @@
+<ng-content select="[text]"></ng-content>
+
+<!-- The Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body shadow">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="cph-card">
+							<div class="front">
+								<span></span>
+								<div class="row">
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="previous" (click)="newSide('front', 'left', 'left')">
+											<i class="fas fa-chevron-left"></i>
+										</div>	
+									</div>
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="next" (click)="newSide('front', 'right', 'right')">
+											<i class="fas fa-chevron-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<h3>Överphösare</h3>
+									<h1>{{cph[0].name}}</h1>
+									<h2>{{cph[0].type}}</h2>
+									<div *ngFor="let x of cph[0].xXx">
+										<a id="AABB" href="{{x.link}}" target="_blank">
+											<h2>{{x.type}}</h2>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<span></span>
+								<div class="row">
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="previous" (click)="newSide('right', 'front', 'left')">
+											<i class="fas fa-chevron-left"></i>
+										</div>	
+									</div>
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="next" (click)="newSide('right', 'back', 'right')">
+											<i class="fas fa-chevron-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<h3>Överphösare</h3>
+									<h1>{{cph[1].name}}</h1>
+									<h2>{{cph[1].type}}</h2>
+									<a *ngFor="let x of cph[1].xXx" href="{{x.link}}" target="_blank">
+										<h2>{{x.type}}</h2>
+									</a>
+								</div>
+							</div>
+							<div class="back">
+								<span></span>
+								<div class="row">
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="previous" (click)="newSide('back', 'right', 'left')">
+											<i class="fas fa-chevron-left"></i>
+										</div>	
+									</div>
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="next" (click)="newSide('back', 'left', 'right')">
+											<i class="fas fa-chevron-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<h3>Överphösare</h3>
+									<h1>{{cph[2].name}}</h1>
+									<h2>{{cph[2].type}}</h2>
+									<div *ngFor="let x of cph[2].xXx">
+										<a href="{{x.link}}" target="_blank">
+											<h2>{{x.type}}</h2>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="left">
+								<span></span>
+								<div class="row">
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="previous" (click)="newSide('left', 'back', 'left')">
+											<i class="fas fa-chevron-left"></i>
+										</div>	
+									</div>
+									<div class="col-6 col-xs-6 col-md-6 col-lg-6">
+										<div class="next" (click)="newSide('left', 'front', 'right')">
+											<i class="fas fa-chevron-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<h3>Överphösare</h3>
+									<h1>{{cph[3].name}}</h1>
+									<h2>{{cph[3].type}}</h2>
+									<div *ngFor="let x of cph[3].xXx">
+										<a href="{{x.link}}" target="_blank">
+											<h2>{{x.type}}</h2>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

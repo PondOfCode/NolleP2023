@@ -1,0 +1,47 @@
+[
+    {
+        "event": "Grillkväll",
+        "date": "2019-08-21 18:00:00"
+    },
+    {
+        "event": "Lekkväll",
+        "date": "2019-08-22 18:00:00"
+    },
+    {
+        "event": "Temajakt",
+        "date": "2019-08-23 18:00:00"
+    }
+    ,
+    {
+        "event": "Tops & Adeln",
+        "date": "2019-08-24 18:00:00"
+    },
+    {
+        "event": "Chillaxin",
+        "date": "2019-08-25 19:00:00"
+    },
+    {
+        "event": "Auktionsphejden",
+        "date": "2019-08-26 18:00:00"
+    },
+    {
+        "event": "Temasittning",
+        "date": "2019-08-27 18:00:00"
+    },
+    {
+        "event": "Rus by Day & Night",
+        "date": "2019-08-28 18:00:00"
+    },
+    {
+        "event": "Burträskbingo",
+        "date": "2019-08-29 18:00:00"
+    },
+    {
+        "event": "Nollesittning",
+        "date": "2019-08-30 18:00:00"
+    },
+    {
+        "event": "Nolleuppdrag",
+        "date": "2019-08-31 13:00:00"
+    }
+]

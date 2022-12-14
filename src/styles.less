@@ -1,0 +1,84 @@
+:root {
+    --letterToNollanDivider: rgba(55, 173, 227, .85);
+
+    --arrowColorMedia:     rgba(201, 124, 180, .85);//rgba(5, 134, 232, .85);//rgba(238, 21, 68, .85);
+    --arrowColorSponsors:  rgba(201, 124, 180, .85);//rgba(5, 134, 232, .85);//rgba(238, 21, 68, .85);
+    --arrowColorCrudTitle: rgba(201, 124, 180, .85);//rgba(5, 134, 232, .85);//rgba(238, 21, 68, .85);
+
+    --ophQuotesBorderTop:      rgba(55, 173, 227, .85);
+    --ophQuotesBorderRight:    rgba(201, 124, 180, .85);
+    --ophQuotesBorderBottom:   rgba(55, 173, 227, .85);
+    --ophQuotesBorderLeft:     rgba(201, 124, 180, .85);
+    --ophQuotesHover:          rgba(55, 173, 227, .85);
+    --ophQuotesTextDecoration: rgba(55, 173, 227, .85);
+
+    --mobileMenuButtonColor:     linear-gradient(45deg, rgba(55, 173, 227, .85), rgba(55, 173, 227, .85));
+    --mobileBtm:               rgba(55, 173, 227, .85);
+    --titleLineColor:          rgba(55, 173, 227, .85);
+    --menuTitleColor:          rgba(55, 173, 227, .85);
+    --mobileMenuCloseBtnColor: rgba(55, 173, 227, .85);
+
+    --imgCarouselColor: linear-gradient(315deg, rgba(55, 173, 227, .85), rgba(201, 124, 180, .85));
+
+    --cphCardFront: linear-gradient(45deg, #ba0000, #ba0000);
+    --cphCardRight: linear-gradient(45deg, #000, #4c4c4c);
+    --cphCardBack:  linear-gradient(45deg, #000, #262626);
+    --cphCardLeft:  linear-gradient(45deg, #000, #262626);
+    --bs-primary-rgb: rgb(55, 173, 227) !important;
+}
+
+body {
+    background-image: url("/assets/tiles/cartographer.png");
+    background-repeat: repeat;
+    color: #04002b;
+}
+
+.sponsor-img {
+    width: 50%;
+    height: autor;
+}
+
+/* Font Family Setup*/
+@font-face {
+    font-family: jurrasic-park;
+    src: url("/assets/fonts/JurassicPark.woff") format("woff");
+}
+@font-face {
+    font-family: star-jedi;
+    src: url("/assets/fonts/Starjedi.woff") format("woff");
+}
+
+.img-glyph {
+	height: 17px;
+	width: auto;
+	transform: translateY(-15%);
+}
+
+.title-arrow {
+    border-left: 22px solid var(--arrowColorCrudTitle);
+    border-right: 50px solid transparent;
+    border-top: 50px solid var(--arrowColorCrudTitle);
+    margin: 0 -25px 0 -15px;
+
+    > h1, > h2, > h3, > h4 {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transform: translate(-0%, -100%);
+        width: calc(100% + 50px);
+    }
+}
+.btn-primary{
+    background-color: rgba(55, 173, 227, .85) !important;
+    border-color: rgba(55, 173, 227, .85) !important;
+}
+.btn-outline-primary{
+    border-color: rgba(55, 173, 227, .85) !important;
+    color: rgba(55, 173, 227, .85) !important;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle, .btn-outline-primary:hover, .btn-outline-primary:focus{
+    background-color: rgba(55, 173, 227, .85) !important;
+    border-color: rgba(55, 173, 227, .85) !important;
+    color: white !important;
+    box-shadow: none !important;
+}

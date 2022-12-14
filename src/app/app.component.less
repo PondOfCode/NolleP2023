@@ -1,0 +1,185 @@
+@brace-color: #fff;
+@icon-color: #33B0FF;
+
+p {
+    color: #fff;
+}
+
+.menu-mobile > a {
+	float: none;
+	background-color: #343a40;
+}
+
+/* Font Setup*/
+
+.main-title {
+    color: #fff;
+	font-size: 3.5rem;
+	display: block;
+	text-align: center;
+	font-family: Georgia;
+	height: 100px;
+	margin-top: 5px;
+	text-decoration: overline underline  var(--titleLineColor);
+	@media screen and (max-width: 600px) {
+		font-size: 3.0rem;
+	}
+}
+
+.year-title {
+	position: absolute;
+    left: 52%;
+    top: 75%;
+	transform: translate(-50%, -50%);
+
+	color: #fff;
+	font-size: 2.6rem;
+	text-align: center;
+	font-family: Georgia;
+	
+	@media screen and (max-width: 600px) {
+		left: 55%;
+		top: 70%;
+		font-size: 1.9rem;
+	}
+}
+
+/// Images for buttons in the navigation menu
+.img-glyph {
+	height: 17px;
+	width: auto;
+	transform: translateY(-15%);
+}
+
+li:hover > a:not(.active) img{
+	filter: brightness(115%);
+}
+
+li > .active > img{
+	filter: brightness(150%);
+}
+
+li:hover > a span{
+	filter: brightness(115%);
+}
+
+li > .active > span{
+	filter: brightness(115%);
+}
+
+li:hover > a span{
+	filter: brightness(115%);
+}
+
+li > .active > span{
+	filter: brightness(115%);
+}
+
+/* CONTAINERS */
+
+.social-divider-container {
+    background-color: #fff;
+    width: 325px; 
+    margin-top: 5px;
+}
+
+.main-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 90vh;
+}
+
+.side-container {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .fa-home{
+        color: @icon-color;
+    }
+    .fa-users{
+        color: @icon-color;
+    }
+    .fa-gamepad{
+        color: @icon-color;
+    }
+    .fa-person-booth{
+        color: @icon-color;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* LARGE SCREEN LAYOUT */
+
+.marginsLR {
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.side-lg-screen {
+    margin-bottom: 3px; 
+    padding: 5px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+.button-styling {
+    display: block;
+    text-align: left;
+
+    &>span {
+        padding: 0.5em 1em;
+        color: #fff;
+        font-size: 2rem;
+
+        &:hover {
+            color: grey
+        }
+    }
+}
+
+/* PHONE LAYOUT */
+
+@media screen and (max-width: 600px) {
+	a {
+        margin: 0 10px 0 0;
+    }
+}
+
+.menu-title-text {
+    top: 0;
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: Georgia; 
+    text-decoration: overline underline var(--menuTitleColor);
+}
+
+.side-phone {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 10px; 
+    margin-left: 20px; 
+    padding: 5px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+.sponsor-img {
+    width: 14vh;
+    margin-left: -16px
+}
+
+.arrow {
+    position: relative;
+    border-left:  22px solid var(--arrowColorSponsors);
+    border-right: 22px solid transparent;
+    border-top:   22px solid var(--arrowColorSponsors);
+    margin: 0 -15px 0 -15px;
+
+    > p {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translate(0, -100%);
+    }
+}

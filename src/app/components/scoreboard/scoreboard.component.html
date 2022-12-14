@@ -1,0 +1,59 @@
+<crud>
+	<div text>
+	<div class="col-lg-8 title-arrow">
+		<h1>Nollekampen</h1>
+	</div>
+	<div class="box col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="!showScore">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<div *ngFor="let item of scores; let i = index">
+			<div class="ophText" (click)="flavorTextToShow()" *ngIf="item.isVisible">
+				<h4>{{item.text}}</h4>
+			</div>
+		</div>
+	</div>
+		<div *ngIf="showScore">
+			<img class="class-img col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{classImg}}" alt="">
+			<div class="container-fluid">
+				<div class="col-md-12 justify-content-md-center" style="text-align: center;">
+					<img class="gold-img" src="/assets/Prizes/Bear_GOLD.png" alt="">
+					<p style="margin-bottom: 0px;"><u>{{scores[0].class}}</u></p><p>{{scores[0].text}}</p>
+				</div>
+				<!-- Show Silver and Bronz -->
+				<div *ngIf="scores[1].score != scores[2].score">
+					<div class="row justify-content-md-center" style="text-align: center;">
+						<div class="col-md-6">
+							<img class="silver-img" src="/assets/Prizes/Bear_SILVER.png" alt="">
+							<p style="margin-bottom: 0px;"><u>{{scores[1].class}}</u></p>  <p>{{scores[1].text}}</p>
+						</div>
+						<div class="col-md-6" style="margin-top:18px">
+							<img class="bronze-img" src="/assets/Prizes/Bear_BRONZ.png" alt="">
+							<p style="margin-bottom: 0px;"><u>{{scores[2].class}}</u></p>  <p>{{scores[2].text}}</p>
+						</div>
+					</div>
+				</div>
+				<!-- Show two silver -->
+				<div *ngIf="scores[1].score === scores[2].score">
+					<div class="row justify-content-md-center" style="text-align: center;">
+						<div class="col-md-6">
+							<img class="silver-img" src="/assets/Prizes/Bear_SILVER.png" alt="">
+							<p style="margin-bottom: 0px;"><u>{{scores[1].class}}</u></p>  <p>{{scores[1].text}}</p>
+						</div>
+						<div class="col-md-6">
+							<img class="silver-img" src="/assets/Prizes/Bear_SILVER.png" alt="">
+							<p style="margin-bottom: 0px;"><u>{{scores[2].class}}</u></p>  <p>{{scores[2].text}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-md-center" style="margin-top: 20px;" >
+					<div *ngFor="let item of scores | slice:3; let i = index" class="col-md-12 col-lg-4" style="text-align: center">
+						<img class="vanilla-img" src="/assets/Prizes/Bear_VANILLA.png" alt="">
+						<p style="margin-bottom: 0px;"><u>{{i+4}}: {{item.class}}</u></p>  <p>{{item.text}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</crud>

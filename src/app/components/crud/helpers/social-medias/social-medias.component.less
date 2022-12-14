@@ -1,0 +1,123 @@
+@fontSizePc: 30px;
+@backgroundPcHeight: 55px;
+@backgroundPcWidth:  45px;
+
+@fontSizeMobile: 35px;
+@backgroundMobileHeight: 55px;
+@backgroundMobileWidth:  45px;
+
+h1 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+hr {
+    background-color: white;
+}
+
+.fa-discord {
+    color: white;
+}
+
+.social-background {
+    position: relative;
+    border-radius: 80%;
+	width: @backgroundPcWidth;
+    height: @backgroundPcHeight;
+    box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
+    z-index: 10;
+    transform-origin: bottom center;
+
+    @media screen and (max-width: 600px) {
+        height: @backgroundMobileHeight;
+        width:  @backgroundMobileWidth;
+    }
+
+    display:inline-block;
+    margin-right: 8px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .fab {
+        color: white;
+        font-size: @fontSizePc;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        @media screen and (max-width: 600px) {
+            font-size: @fontSizeMobile;
+        }
+    
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:before {
+        content:"▲";
+        color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+    }
+    
+}
+
+.social-background.facebook {
+    background: #007bff;
+}
+
+.social-background.facebook:before {
+    color: #007bff;
+}
+
+.social-background.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-background.instagram:before {
+    z-index: -1;
+    color: #fdf497;
+}
+
+.social-background.discord {
+    background: #4a67cf;
+}
+
+.social-background.discord:before {
+    color: #4a67cf;
+}
+
+.arrow {
+    position: relative;
+    border-left:  22px solid var(--arrowColorMedia);
+    border-right: 22px solid transparent;
+    border-top:   22px solid var(--arrowColorMedia);
+    margin: 0 -15px 0 -15px;
+
+    > p {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translate(0, -100%);
+    }
+}

@@ -1,0 +1,134 @@
+<div class="col-12">
+    <h1 class="main-title">{{globals.title}}</h1>
+    <h1 class="year-title"> - {{globals.year}}</h1>
+</div>
+
+<mobile-menu></mobile-menu>
+
+<image-carousel></image-carousel>
+
+<div class="container-fluid crimson-bg" style="padding-bottom: 30px; margin-top:20px;">
+	<div class="row justify-content-md-center align-items-start">
+		<div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 side-container box-shadow">
+			<social-medias></social-medias>
+			<div class="arrow">
+				<p>Sponsors</p>
+			</div>
+			<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+				<div *ngFor="let image of sponsImgs; let i = index">
+					<div class="col-lg-6">
+						<img class="sponsor-img side-lg-screen" src="{{image}}" alt="Card image cap">
+					</div>
+				</div>
+			</div>
+			<div class="arrow">
+				<p>Partners</p>
+			</div>
+			<div class="row" style="margin-top: 10px;">
+				<div *ngFor="let image of coWorkersImgs; let i = index">
+					<div class="col-lg-6">
+						<img class="sponsor-img side-lg-screen" src="{{image}}" alt="Card image cap">
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 main-container box-shadow marginsLR">
+			<router-outlet></router-outlet>
+			<br>
+		</div>
+		<!-- MENU PC -->
+		<div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 side-container box-shadow">
+			<div class="row">
+                <div class="col-lg-2">
+                    <img src="assets/faviconTrans.ico" data-toggle="modal" data-target="modal" style="height: 5vh; width: auto; margin-top: 3px; cursor: pointer;"> <!-- Sätt tillbaka #modal i data-target när nolle-p Startar-->
+                </div>
+                <div class="col-lg-6">
+                    <p class="menu-title-text">Phöseriet</p>
+                </div>
+            </div>
+            <!-- <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span class="fas fa-person-booth" style="color: #000"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/vote" routerLinkActive="active">
+                    Vote
+                </button>
+            </div> -->
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span class="fas fa-home" style="color: #000"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/home" routerLinkActive="active">
+                    Home
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span>▶</span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/videos" routerLinkActive="active">
+                    Videos
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" style="width: 48px;" disabled >
+                    <span class="fas fa-exclamation gold-gradient" style="color: gold"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/activity" routerLinkActive="active">
+                    Activity
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                        <span class="fas fa-trophy gold-gradient" style="color: gold"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/scoreboard" routerLinkActive="active">
+                    Nollekampen
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span>💌</span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/letter-to-nollan" routerLinkActive="active">
+                    Letter to Nollan!
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span class="fas fa-users" style="color: #000"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/new-student" routerLinkActive="active">
+                    Your Nollep
+                </button>
+            </div>
+            <div class="btn-group btn-block">
+                <button class="btn" [ngClass]="globals.buttonOne" disabled>
+                    <span class="fas fa-gamepad" style="color: #000"></span>
+                </button>
+                <button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/memory" routerLinkActive="active">
+                    Game
+                </button>
+            </div>
+		</div>
+		<!-- sideS ON CELLPHONE #3B5998 #125688 -->
+		<div class="d-sm-none col-xs-1 col-sm-1 side-container box-shadow marginsLR" style="margin-top: 30px;">
+			<social-medias></social-medias>
+			<div class="arrow">
+				<p>Sponsors</p>
+			</div>
+			<div *ngFor="let image of sponsImgs; let i = index" style="display: inline-block">
+				<img class="sponsor-img side-phone" style="margin-right: 20px;" src="{{image}}">
+			</div>
+			<div class="arrow">
+				<p>Partners</p>
+			</div>
+			<div *ngFor="let image of coWorkersImgs; let i = index" style="display: inline-block">
+				<img class="sponsor-img side-phone" style="margin-right: 20px;" src="{{image}}">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	

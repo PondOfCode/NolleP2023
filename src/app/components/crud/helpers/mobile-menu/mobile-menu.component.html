@@ -1,0 +1,83 @@
+<div class="mobile-menu-balloon" (click)="isExpanded = !isExpanded" data-toggle="collapse" [attr.aria-expanded]="!isExpanded">
+	<div class="hamburger-placement">
+		<i class="fas fa-bars"></i>
+	</div>
+</div>
+
+<div class="sidebar" [ngStyle]="{'height.%': isExpanded ? 100 : 0}" style="overflow-y:hidden;">
+	<div class="row">
+		<div class="col-2">
+			<img src="assets/faviconTrans.ico" (click)="isExpanded = !isExpanded" data-toggle="modal" data-target="modal" style="height: 8vh; margin: 3px 0 0 10px;">
+		</div>
+		<div class="col-7">
+			<p class="menu-title-text">Phöseriet</p>
+		</div>
+		<div class="col-1">
+			<a class="fas fa-times closebtn" (click)="isExpanded = !isExpanded"></a>
+		</div>
+	</div>
+	<!-- <div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span class="fas fa-person-booth" style="color: #000"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/vote" routerLinkActive="active">
+			Vote
+		</button>
+	</div> -->
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span class="fas fa-home" style="color: #000"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/home" routerLinkActive="active">
+			Home
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span>▶</span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" routerLink="/videos" routerLinkActive="active">
+			Videos
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" style="width: 48px;" disabled>
+			<span class="fas fa-exclamation gold-gradient" style="color: gold"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/activity" routerLinkActive="active">
+			Activity
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span class="fas fa-trophy gold-gradient" style="color: gold"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/scoreboard" routerLinkActive="active">
+			Nollekampen
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span>💌</span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/letter-to-nollan" routerLinkActive="active">
+			Letter To Nollan!
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span class="fas fa-users" style="color: #000"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/new-student" routerLinkActive="active">
+			Your Nollep
+		</button>
+	</div>
+	<div class="btn-group btn-block">
+		<button class="btn" [ngClass]="globals.buttonOne" disabled>
+			<span class="fas fa-gamepad" style="color: #000"></span>
+		</button>
+		<button class="btn btn-block" [ngClass]="globals.buttonTwo" (click)="isExpanded = !isExpanded" routerLink="/memory" routerLinkActive="active">
+			Game
+		</button>
+	</div>
+</div>

@@ -1,0 +1,175 @@
+// @icon-color: #33B0FF;
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+h5 {
+    color: #fff;
+}
+
+h6 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+ul > li {
+    color: #fff;
+}
+
+hr {
+    background-color: #fff;
+}
+
+//////////////// DOOD ////////////////
+.cph-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .title {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .front span, .right span,
+    .back span, .left span {
+        position: absolute;
+        top: 0;
+        left: -80%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .2);
+        transform: skewX(-10deg);
+    }
+
+    .front {
+        width: 100%;
+        height: 100%;
+        background: var(--cphCardFront);
+        padding: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: .5s;
+        transform-origin: right;
+        transform: translateX(0) rotateY(0);
+    }
+
+    .right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--cphCardRight);
+        padding: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: .5s;
+        transform-origin: left;
+        transform: translateX(100%) rotateY(90deg);
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--cphCardBack);
+        padding: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: .5s;
+        transform-origin: left;
+        transform: translateX(100%) rotateY(90deg);
+    }
+
+    .left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--cphCardLeft);
+        padding: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: .5s;
+        transform-origin: left;
+        transform: translateX(100%) rotateY(90deg);
+    }
+}
+
+.next {
+    cursor: pointer;
+    text-align: right;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+}
+
+.previous {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.shadow {
+    background: linear-gradient(0deg, #000, #262626);
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+        background-size: 400%;
+        width:  calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: animate 20s linear infinite;
+    }
+
+    &:after {
+        filter: blur(20px);
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

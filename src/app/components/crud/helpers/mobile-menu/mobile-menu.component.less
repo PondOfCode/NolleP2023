@@ -1,0 +1,107 @@
+p {
+	color: #fff;
+}
+
+a {
+	display: block;
+}
+
+@keyframes balloon {
+	0%,100%{ transform:translateY(0) rotate(-4deg); }
+	50%{ transform:translateY(-25px) rotate(4deg); }
+}
+
+.mobile-menu-balloon {
+	position: absolute;
+	top: 10vh;
+	@media screen and (min-width: 600px){
+		visibility: hidden;
+	}
+
+	cursor: pointer;
+
+	border-radius: 80%;
+	width: 45px;
+	height: 55px;
+	box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
+	transform-origin: bottom center;
+	
+	background: var(--mobileMenuButtonColor);
+
+	display:inline-block;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+	animation:balloon 4s ease-in-out infinite;
+	
+	&:before {
+		content:"▲";
+		font-size: 18px;
+		color: var(--mobileBtm);
+		display: inline-block;
+		text-align: center;
+		transform: translate(-25%, 160%);
+	}
+
+	&:active {
+		filter: brightness(50%);
+	}
+}
+
+.hamburger-placement {
+	color: white;
+	font-size: 20px;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sidebar {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 9999;
+	background: linear-gradient(to top, transparent, #000, #000);
+
+	.closebtn {
+		position: absolute;
+		font-size: 36px;
+		transform: translate(100%, 50%);
+		color: var(--mobileMenuCloseBtnColor);
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:active {
+			filter: brightness(50%);
+		}
+	}
+
+	a:hover {
+		color: #f1f1f1;
+	}
+	
+}
+
+.menu-title-text {
+    top: 50%;
+    transform: translateY(-50%);
+	font-size: 35px;
+	font-family: Georgia;
+    position: relative;
+    text-decoration: overline underline var(--menuTitleColor);
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
