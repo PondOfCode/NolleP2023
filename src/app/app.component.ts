@@ -18,7 +18,7 @@ export class AppComponent {
 		let pathSpons     = 'assets/sponsors/';
 		let pathCoWorkers = 'assets/coworkers/';
 		
-        this.sponsImgs     = [`${pathSpons}/abf.png`, `${pathSpons}/sammes.png`, `${pathSpons}/skebo.png`,  `${pathSpons}/DinFest.png`, `${pathSpons}/VB-T.png`];
+        this.sponsImgs     = [`${pathSpons}/sammes.png`, `${pathSpons}/skebo.png`,  `${pathSpons}/DinFest.png`, `${pathSpons}/VB-T.png`];
         this.coWorkersImgs = [`${pathCoWorkers}/campus.png`, `${pathCoWorkers}/ltu.png`, `${pathCoWorkers}/tkl.png`, `${pathCoWorkers}/Futuregames_Logo.png`, `${pathCoWorkers}/VM.png`];
 	}
 
