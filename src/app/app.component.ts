@@ -18,8 +18,8 @@ export class AppComponent {
 		let pathSpons     = 'assets/sponsors/';
 		let pathCoWorkers = 'assets/coworkers/';
 		
-        this.sponsImgs     = [`${pathSpons}/sammes.png`, `${pathSpons}/skebo.png`,  `${pathSpons}/DinFest.png`, `${pathSpons}/VB-T.png`];
-        this.coWorkersImgs = [`${pathCoWorkers}/campus.png`, `${pathCoWorkers}/ltu.png`, `${pathCoWorkers}/tkl.png`, `${pathCoWorkers}/Futuregames_Logo.png`, `${pathCoWorkers}/VM.png`];
+        this.sponsImgs     = [`${pathSpons}/sammesstiftelse.png`, `${pathSpons}/skebo.png`,  `${pathSpons}/DinFest-White.png`, `${pathCoWorkers}/VM.png`, `${pathSpons}/VB-T.png`, `${pathSpons}/BodaBorg.png`, `${pathSpons}/BureaCamping.png`];
+        this.coWorkersImgs = [`${pathCoWorkers}/campus-white.png`, `${pathCoWorkers}/ltu.png`, `${pathCoWorkers}/tkl.png`, `${pathCoWorkers}/Futuregames_Logo.png`, `${pathCoWorkers}/VM.png`];
 	}
 
 	ngOnInit() {

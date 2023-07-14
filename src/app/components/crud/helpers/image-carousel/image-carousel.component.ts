@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImageCarouselComponent implements OnInit {
 	images: Array<any> = [];
 	constructor() { 
-		this.images = ['assets/carousel/nollep2022.png'];
+		this.images = ['assets/carousel/nollep2023.png'];
 	}
 
 	ngOnInit() {
