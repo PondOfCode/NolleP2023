@@ -16,31 +16,31 @@ export class CrudComponent implements OnInit {
 
     constructor(private globals: Globals) {         
         this.cph = [
-            {name: 'Ketchup\'s', 
+            {name: 'Gardin\'s', 
             xXx: [{
-                    type: 'Cooking show', 
-                    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                    type: 'Shark week', 
+                    link: 'https://www.youtube.com/watch?v=o3uJCCa5w2A'
                 }
             ]},
-            {name: 'Rostig\'s',   
+            {name: 'BOONGA\'s',   
             xXx: [{
-                    type: 'Vrålande',  
-                    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' 
+                    type: 'MOAI',  
+                    link: 'https://www.youtube.com/shorts/ExHIeR_drZY' 
                 },
                 {
-                    type: 'Skrålande',
-                    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                    type: 'MOAI 2',  
+                    link: 'https://www.youtube.com/shorts/fBiFr1QzVmg' 
+                },
+            ]},
+            {name: 'Gnäll\'s', 
+            xXx: [{
+                    type: 'Whining', 
+                    link: 'https://www.youtube.com/watch?v=6KvtfMPUunQ'
                 }
             ]},
-            {name: 'Sparkelz\'s', 
+            {name: 'Jotun\'s', 
             xXx: [{
-                    type: 'UwUande', 
-                    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-                }
-            ]},
-            {name: 'Floof\'s', 
-            xXx: [{
-                    type: 'Floofande', link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                    type: 'Live Concert', link: 'https://www.youtube.com/watch?v=c_jomXhjUjI'
                 }
             ]}
         ];
