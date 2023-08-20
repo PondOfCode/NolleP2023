@@ -1,78 +1,22 @@
 [
     {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Alla går i skuggan av Överphösarna"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna talar blindskrift flytande"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna kastar sten i glashus"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna uppfann skivat bröd"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna vet vad som finns väst om Westeros"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna byggde rom på en dag"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Överphösarna är allt som är gott och allt som är gott är Överphösarnas"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Frukta inte mörkret, ty Överphösarna är ljuset"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Allt som händer har en mening, det har Överphösarna sett till"
-    },
-    {
-        "class":"Överphösarna",
-        "score":"blob",
-        "text": "Alla barnen avgudar Överphösarna, för... Varför skulle de inte?"
-    },
-    
-    {
-        "class":"Datorspelsutveckling",
+        "class":"#1_SVEN",
         "score":1000000,
-        "text": "blob"
+        "text": "A barrel of rum"
     },
     {
-        "class":"Digital_design",
+        "class":"#2_The_Simp",
         "score":666,
-        "text": "blob"
+        "text": "A tub of lard"
     },
     {
-        "class":"Filmdesign",
+        "class":"#3_Future_Games",
         "score":665,
-        "text": "blob"
+        "text": "45 bent forks"
     },
     {
-        "class":"Ekonomi_&_Basår",
+        "class":"#4_Future_Magic",
         "score":-22344,
-        "text": "blob"
-    },
-    {
-        "class":"Maskinteknik_&_Nätverk",
-        "score":-22222222345,
-        "text": "blob"
+        "text": "A half full fridge"
     }
 ]
