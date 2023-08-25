@@ -2,12 +2,12 @@
         <div class="col-lg-8 title-arrow">
 			<h1>Videos</h1>
 		</div>
+    <div><video width="100%" height="315"><source src="../../../../src/assets/Phösarkampen2023.mp4" type="video/mp4"></video></div>
     <div *ngFor="let item of videos; let i = index">
       <br>
       <h5>{{item.header}}</h5>
       <div class="video_wrapper">
-        <iframe width="100%" height="315" [src]="this.transform('https://www.youtube.com/embed/' + item.videoUrl)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+        <!-- <iframe width="100%" height="315" [src]="this.transform('https://www.youtube.com/embed/' + item.videoUrl)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     </div>
     <!--Insert Stuff Here-->
     </div>

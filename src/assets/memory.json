@@ -1,149 +1,153 @@
 [
     {
-        "closed": true
+        "closed": false
     },
     {
-        "phosare": "Phösare Bubbles",
-        "card": "assets/phmemory/Phnamn.png"
+        "phosare": "Phösare 19",
+        "card": "assets/phmemory/19.png"
+    },
+    {
+        "phosare": "Phösare Arboga",
+        "card": "assets/phmemory/Arboga.png"
     },
     {
         "phosare": "Phösare Bilip",
-        "card": ""
+        "card": "assets/phmemory/Bilip.png"
     },
     {
-        "phosare": "Phösare Bastard",
-        "card": ""
+        "phosare": "Phösare Birb",
+        "card": "assets/phmemory/Birb.png"
     },
     {
-        "phosare": "Phösare Gås",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Hissen",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Lager",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Knugen",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Fågell",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Kät",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Noiz",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Sanders",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Smörgås",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Vito",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare DM",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Limbo",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Wiener",
-        "card": ""
-    },
-    {
-        "phosare": "Phösare Boonga",
-        "card": ""
+        "phosare": "Överphösare Boonga",
+        "card": "assets/phmemory/Boonga.png"
     },
     {
         "phosare": "Phösare Brunsås",
-        "card": ""
+        "card": "assets/phmemory/Brunsås.png"
     },
     {
-        "phosare": "Phösare Clean",
-        "card": ""
+        "phosare": "Phösare Crack",
+        "card": "assets/phmemory/Crack.png"
     },
     {
-        "phosare": "Phösare Dance",
-        "card": ""
+        "phosare": "Phösare D.E.H. Cube",
+        "card": "assets/phmemory/DehCube.png"
     },
     {
-        "phosare": "Phösare Dumbo",
-        "card": ""
+        "phosare": "Phösare Drip",
+        "card": "assets/phmemory/drip.png"
     },
     {
-        "phosare": "Phösare Fahle",
-        "card": ""
+        "phosare": "Phösare DrSlope",
+        "card": "assets/phmemory/DrSlope.png"
     },
     {
-        "phosare": "Phösare Fika",
-        "card": ""
+        "phosare": "Phösare Em",
+        "card": "assets/phmemory/Em.png"
     },
     {
-        "phosare": "Phösare Färs",
-        "card": ""
+        "phosare": "Phösare Fara",
+        "card": "assets/phmemory/Fara.png"
     },
     {
-        "phosare": "Phösare Förclara",
-        "card": ""
+        "phosare": "Phösare Fem",
+        "card": "assets/phmemory/fem_hat.png"
+    },
+    {
+        "phosare": "Överphösare Gardin",
+        "card": "assets/phmemory/gardin.png"
+    },
+    {
+        "phosare": "Överphösare Gnäll",
+        "card": "assets/phmemory/gnall.png"
+    },
+    {
+        "phosare": "Phösare Goofy",
+        "card": "assets/phmemory/Goofy.png"
+    },
+    {
+        "phosare": "Phösare Gås",
+        "card": "assets/phmemory/Gås.png"
+    },
+    {
+        "phosare": "Phösare Hissen",
+        "card": "assets/phmemory/Hissenn.jpg"
     },
     {
         "phosare": "Phösare Hood",
-        "card": ""
+        "card": "assets/phmemory/HOOD.png"
     },
     {
-        "phosare": "Phösare Jotun",
-        "card": ""
+        "phosare": "Överphösare Jotun",
+        "card": "assets/phmemory/Jotun.png"
     },
     {
-        "phosare": "Phösare Karlstad",
-        "card": ""
+        "phosare": "Phösare Kapten",
+        "card": "assets/phmemory/kapten.png"
     },
     {
-        "phosare": "Phösare Khen",
-        "card": ""
+        "phosare": "Phösare Lancer",
+        "card": "assets/phmemory/LANCER.png"
     },
     {
-        "phosare": "Phösare Ramslök",
-        "card": ""
+        "phosare": "Phösare Lime",
+        "card": "assets/phmemory/Lime.png"
     },
     {
-        "phosare": "Phösare Reaper",
-        "card": ""
+        "phosare": "Phösare M8",
+        "card": "assets/phmemory/M8.png"
     },
     {
-        "phosare": "Phösare Ring",
-        "card": ""
+        "phosare": "Phösare Maräng",
+        "card": "assets/phmemory/Maräng.png"
     },
     {
-        "phosare": "Phösare Salt",
-        "card": ""
+        "phosare": "Phösare Mommy",
+        "card": "assets/phmemory/Mommy.jpg"
     },
     {
-        "phosare": "Phösare Skunk",
-        "card": ""
+        "phosare": "Phösare Mysglass",
+        "card": "assets/phmemory/Mysglass.png"
     },
     {
-        "phosare": "Phösare Tant",
-        "card": ""
+        "phosare": "Phösare Nug(g)ie",
+        "card": "assets/phmemory/Nug(g)ie.png"
     },
     {
         "phosare": "Phösare Venom",
-        "card": ""
+        "card": "assets/phmemory/Phösare Venom.png"
+    },
+    {
+        "phosare": "Phösare Poof",
+        "card": "assets/phmemory/Poof.png"
+    },
+    {
+        "phosare": "Phösare Salt",
+        "card": "assets/phmemory/Salt.png"
+    },
+    {
+        "phosare": "Phösare Senpai",
+        "card": "assets/phmemory/Senpai.jpg"
+    },
+    {
+        "phosare": "Phösare Sten",
+        "card": "assets/phmemory/Sten.png"
+    },
+    {
+        "phosare": "Phösare Stroke",
+        "card": "assets/phmemory/Stroke.png"
+    },
+    {
+        "phosare": "Phösare Toazt",
+        "card": "assets/phmemory/Toazt.png"
+    },
+    {
+        "phosare": "Phösare Yaro",
+        "card": "assets/phmemory/Yaro.png"
+    },
+    {
+        "phosare": "Phösare ZZZ",
+        "card": "assets/phmemory/ZZZ-Snark.png"
     }
 ]
